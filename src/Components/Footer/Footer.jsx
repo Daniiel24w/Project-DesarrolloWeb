@@ -1,37 +1,79 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
-  return (
-    <div>
-        <section className="position-fixed bottom-0 start-0 end-0 d-flex flex-column bg-dark py-3 text-white justify-content-center  align-items-center">
-            <div className="d-flex justify-content-between gap-5 align-items-start ">
-                <div>
-                    <h2>Nombre de empresa [Cambiar]</h2>
-                    <p>Informacion poco relevante [Cambiar]</p>
-                </div>
-                <div>
-                    <h2>Contacto</h2>
-                    <ul className="text-decoration-none text-black ">
-                        <li><a className="text-decoration-none"  href="/">+54-9-387-354968</a></li>
-                        <li><a href="#"> example@example.com</a></li>
-                        <li >Direccion cualquiera    </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Links</h2>
-                    <ul>
-                        <li><a className="text-decoration-none text-black " href="/">Home</a></li>
-                        <li><a className="text-decoration-none text-black " href="/products">Products</a></li>
-                        <li><a className="text-decoration-none text-black " href="/categories">Categories</a></li>
-                    </ul>
-                </div>
+    const footerStyle = {
+        container: {
+            borderRight: "2px solid white",
+            margin: "16px 0px",
+        },
+        footer: {
+            backgroundColor: "#080F0F",
+            display: "flex",
+            justifyContent: "space-between",
+            padding: "20px",
+        },
+        title: {
+            color: "white",
+            fontSize: "1.5rem",
+            marginBottom: "10px",
+        },
+        text: {
+            color: "#A4BAB7",
+            fontSize: "1rem",
+            lineHeight: "1.5",
+            padding: "0px 16px",
+        },
+        link: {
+            textDecoration: "none", // Elimina el subrayado
+            color: "#BEA57D", 
+        },
+        list: {
+            listStyleType: "none",
+            padding: 0,
+        },
+        Icons: {
+            fontSize: "3rem",
+            padding: "0 16px",
+            color: "#BEA57D"
+        },
+    };
+
+    return (
+        <footer style={footerStyle.footer}>
+            {/* Empresa */}
+            <div className="col" style={footerStyle.container}>
+                <h2 style={footerStyle.title}>El refugio de los libros</h2>
+                <p style={footerStyle.text}>
+                    Más que libros, un refugio de imaginación donde cada página abre la puerta a nuevos mundos, ideas y sueños que esperan ser descubiertos.
+                </p>
             </div>
-            <div >
-                Todos los derecho reservados 2025
+
+            {/* Contáctanos */}
+            <div className="col" style={footerStyle.container}>
+                <h2 style={footerStyle.title}>Contáctanos</h2>
+                <ul style={footerStyle.list}>
+                    <li style={footerStyle.text}>
+                        <b>Teléfono:</b> <Link style={footerStyle.link} to={"#"}>+123 456 789</Link>
+                    </li>
+                    <li style={footerStyle.text}>
+                        <b>Email:</b> <Link style={footerStyle.link} to={"mailto:contacto@refugiolibros.com"}>contacto@refugiolibros.com</Link>
+                    </li>
+                    <li style={footerStyle.text}>
+                        <b>Dirección:</b> <Link style={footerStyle.link} to={"https://maps.app.goo.gl/PmEAa5YiP2abJLdE8"}>Calle Imaginaria 123</Link>
+                    </li>
+                </ul>
             </div>
-        </section>
-    </div>
-  )
+
+            {/* Redes Sociales */}
+            <div className="col m-3">
+                <h2 style={footerStyle.title}>Redes Sociales</h2>
+                <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-whatsapp"></i></Link>
+                <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-facebook"></i></Link>
+                <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-instagram"></i></Link>
+            </div>
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;
