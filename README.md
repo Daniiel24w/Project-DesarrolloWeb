@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+
+# Para el profe:
+
+Profe utilice la IA para los casos de estilos y busqueda de imagenes como las del fondo, tambien para generar los textos del home.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
