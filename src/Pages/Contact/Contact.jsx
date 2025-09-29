@@ -17,22 +17,20 @@ function Contact() {
     container: {
       width: "100%",
       minHeight: "100vh",
-      paddingTop: "5rem", // Espacio para el navbar
-      paddingBottom: "5rem", // Espacio para el footer
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      fontFamily: "sans-serif",
+      padding: "2rem",
       backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${background})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     },
     formCard: {
-      background: "gray", // Fondo semitransparente
+      background: "rgba(255, 255, 255, 0.9)",
       padding: "2rem",
       borderRadius: "8px",
-      boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+      boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
       maxWidth: "800px",
       width: "100%",
     },
@@ -72,6 +70,7 @@ function Contact() {
       marginTop: "2rem",
       width: "100%",
       borderCollapse: "collapse",
+      overflowX: "auto",
     },
     th: {
       background: "#3498db",

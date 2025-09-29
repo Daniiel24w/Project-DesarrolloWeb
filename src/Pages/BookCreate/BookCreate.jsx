@@ -13,13 +13,22 @@ function BookCreate() {
   const bookCreateStyle = {
     container: {
       width: "100%",
-      height: "100%",
+      minHeight: "100vh", // Abarca toda la pantalla
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${background})`,
       backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
     },
     containerForm: {
-      background: "#080F0F",
-      width: "50rem",
+      background: "rgba(0, 0, 0, 0.8)",
+      padding: "2rem",
+      borderRadius: "8px",
+      boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+      maxWidth: "600px",
+      width: "100%",
     },
     form: {
       display: "flex",
@@ -27,9 +36,10 @@ function BookCreate() {
       gap: "1rem",
     },
     input: {
-      padding: "10px",
-      border: "3px solid gray",
-      borderRadius: "5px",
+      padding: "0.75rem",
+      border: "1px solid #ddd",
+      borderRadius: "4px",
+      fontSize: "1rem",
     },
     button: {
       padding: "0.8rem",
@@ -43,7 +53,7 @@ function BookCreate() {
     },
     error: {
       color: "#e74c3c",
-      marginTop: "-0.5rem",
+      fontSize: "0.875rem",
     },
   };
 

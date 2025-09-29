@@ -40,38 +40,40 @@ function Footer() {
     };
 
     return (
-        <footer style={footerStyle.footer}>
+        <footer className="container-fluid py-4" style={footerStyle.footer}>
+          <div className="row">
             {/* Empresa */}
-            <div className="col" style={footerStyle.container}>
-                <h2 style={footerStyle.title}>El refugio de los libros</h2>
-                <p style={footerStyle.text}>
-                    Más que libros, un refugio de imaginación donde cada página abre la puerta a nuevos mundos, ideas y sueños que esperan ser descubiertos.
-                </p>
+            <div className="col-md-4 mb-3" style={footerStyle.container}>
+              <h2 style={footerStyle.title}>El refugio de los libros</h2>
+              <p style={footerStyle.text}>
+                Más que libros, un refugio de imaginación donde cada página abre la puerta a nuevos mundos, ideas y sueños que esperan ser descubiertos.
+              </p>
             </div>
 
             {/* Contáctanos */}
-            <div className="col" style={footerStyle.container}>
-                <h2 style={footerStyle.title}>Contáctanos</h2>
-                <ul style={footerStyle.list}>
-                    <li style={footerStyle.text}>
-                        <b>Teléfono:</b> <Link style={footerStyle.link} to={"#"}>+123 456 789</Link>
-                    </li>
-                    <li style={footerStyle.text}>
-                        <b>Email:</b> <Link style={footerStyle.link} to={"mailto:contacto@refugiolibros.com"}>contacto@refugiolibros.com</Link>
-                    </li>
-                    <li style={footerStyle.text}>
-                        <b>Dirección:</b> <Link style={footerStyle.link} to={"https://maps.app.goo.gl/PmEAa5YiP2abJLdE8"}>Calle Imaginaria 123</Link>
-                    </li>
-                </ul>
+            <div className="col-md-4 mb-3" style={footerStyle.container}>
+              <h2 style={footerStyle.title}>Contáctanos</h2>
+              <ul style={footerStyle.list}>
+                <li style={footerStyle.text}>
+                  <b>Teléfono:</b> <Link style={footerStyle.link} to={"#"}>+123 456 789</Link>
+                </li>
+                <li style={footerStyle.text}>
+                  <b>Email:</b> <Link style={footerStyle.link} to={"mailto:contacto@refugiolibros.com"}>contacto@refugiolibros.com</Link>
+                </li>
+                <li style={footerStyle.text}>
+                  <b>Dirección:</b> <Link style={footerStyle.link} to={"https://maps.app.goo.gl/PmEAa5YiP2abJLdE8"}>Calle Imaginaria 123</Link>
+                </li>
+              </ul>
             </div>
 
             {/* Redes Sociales */}
-            <div className="col m-3">
-                <h2 style={footerStyle.title}>Redes Sociales</h2>
-                <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-whatsapp"></i></Link>
-                <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-facebook"></i></Link>
-                <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-instagram"></i></Link>
+            <div className="col-md-4 mb-3 text-center">
+              <h2 style={footerStyle.title}>Redes Sociales</h2>
+              <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-whatsapp"></i></Link>
+              <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-facebook"></i></Link>
+              <Link style={footerStyle.Icons} to={"#"}><i className="bi bi-instagram"></i></Link>
             </div>
+          </div>
         </footer>
     );
 }

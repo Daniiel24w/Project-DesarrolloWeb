@@ -6,20 +6,26 @@ function Home() {
   const homeStyle = {
     container : {
       backgroundImage:`linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${background})`,
-      height: "100%",
-
+      minHeight: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+      textAlign: "center",
     },
 
     title: {
       color: "white",
-      fontSize: "4rem"
+      fontSize: "4rem",
+      marginBottom: "1rem",
     },
 
     text: {
       color: "white",
-      fontSize: "2rem",
-      fontStyle: "italic"
-    }
+      fontSize: "1.5rem",
+      fontStyle: "italic",
+      maxWidth: "800px",
+    },
   }
 
   return (

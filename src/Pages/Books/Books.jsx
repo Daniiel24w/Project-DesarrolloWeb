@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { getItems } from '../../api/api';
 import BookCard from '../../components/BookCard/BookCard';
-import styles from './Books.module.css';
 
 import background from "../../Images/background2.png";
 
@@ -13,11 +12,17 @@ function Books() {
   const booksStyle = {
     container: {
       padding: "5rem",
+      minHeight: "100vh",
       backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${background})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
     },
 
     divisiones: {
       backgroundColor: "#EAE1DF", //Color platino para que resalte con el fondo 
+      borderRadius: "8px",
+      padding: "1rem",
     },
     
   }
