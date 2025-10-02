@@ -45,21 +45,22 @@ Antes de empezar, asegúrate de tener instalado:
 El proyecto utiliza **Firebase**. Para conectarse correctamente se necesita un archivo `.env` en la raíz con las credenciales de Firebase:
 
 ```
-REACT_APP_FIREBASE_API_KEY=xxxx
-REACT_APP_FIREBASE_AUTH_DOMAIN=xxxx
-REACT_APP_FIREBASE_PROJECT_ID=xxxx
-REACT_APP_FIREBASE_STORAGE_BUCKET=xxxx
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=xxxx
-REACT_APP_FIREBASE_APP_ID=xxxx
+REACT_APP_FIREBASE_API_KEY=AIzaSyCVhMl44pmPSv-G81GOKtgRvNtvovlswCs
+REACT_APP_FIREBASE_AUTH_DOMAIN=proyectodw-31c83.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=proyectodw-31c83
+REACT_APP_FIREBASE_STORAGE_BUCKET=proyectodw-31c83.firebasestorage.app  
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=679056837157
+REACT_APP_FIREBASE_APP_ID=1:679056837157:web:b4618ecf8629c9c6798dcc
 ```
 
-> ⚠️ Este archivo `.env` **no se sube a GitHub** por seguridad. Cada usuario debe tener sus propias credenciales.
+> ⚠️ Este archivo `.env` **no se suele subir a GitHub** por seguridad. Cada usuario deberia de tener sus propias credenciales de firebase.
 
 ---
 
 ## 🌐 Despliegue
 
-El proyecto está desplegado en [Vercel](https://vercel.com/).  
+El proyecto está desplegado en [Vercel](https://vercel.com/).
+Aun asi se puede acceder desde mi proyecto de vercel: [VercelProject](https://proyecto-three-navy.vercel.app/).
 Para desplegarlo manualmente en tu propia cuenta:
 
 1. Crear un proyecto en [Vercel](https://vercel.com/).
@@ -71,13 +72,17 @@ Para desplegarlo manualmente en tu propia cuenta:
 
 ## 📚 Tecnologías usadas
 
-- [React](https://reactjs.org/)
-- [React Router](https://reactrouter.com/)
-- [React Hook Form](https://react-hook-form.com/)
-- [Firebase](https://firebase.google.com/)
-- [Vercel](https://vercel.com/)
+El proyecto utiliza las siguientes librerías y frameworks:
 
----
+- **React** (`react`, `react-dom`)  
+- **React Router DOM** (`react-router-dom`)  
+- **React Hook Form** (`react-hook-form`)  
+- **Firebase** (`firebase`)  
+- **Bootstrap** (`bootstrap`)  
+- **React Bootstrap** (`react-bootstrap`) Aunque utilizo los CDN del css y de los iconos de bootstrap
+- **React Hot Toast** (`react-hot-toast`)  
+
+Además de **Vercel** como plataforma de despliegue.
 
 ## 👤 Autor
 - **Daniel Medina**  
