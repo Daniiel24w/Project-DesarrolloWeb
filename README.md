@@ -1,70 +1,84 @@
+# Project-DesarrolloWeb
 
-#    :
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web desarrollada en **React**, con base de datos en **Firebase** y desplegada en **Vercel**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Requisitos previos
 
-### `npm start`
+Antes de empezar, asegúrate de tener instalado:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Node.js](https://nodejs.org/es/download/) (incluye `npm`)
+- [Git](https://git-scm.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📥 Instalación y ejecución en local
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/Daniiel24w/Project-DesarrolloWeb
+   ```
 
-### `npm run build`
+2. **Entrar a la carpeta del proyecto**
+   ```bash
+   cd Project-DesarrolloWeb
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Instalar dependencias**  
+   (esto descargará React Router, React Hook Form, Firebase, etc. automáticamente)
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   > Se abrirá una ventana en tu navegador en `http://localhost:3000` mostrando la aplicación.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Variables de entorno
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El proyecto utiliza **Firebase**. Para conectarse correctamente se necesita un archivo `.env` en la raíz con las credenciales de Firebase:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+REACT_APP_FIREBASE_API_KEY=xxxx
+REACT_APP_FIREBASE_AUTH_DOMAIN=xxxx
+REACT_APP_FIREBASE_PROJECT_ID=xxxx
+REACT_APP_FIREBASE_STORAGE_BUCKET=xxxx
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=xxxx
+REACT_APP_FIREBASE_APP_ID=xxxx
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> ⚠️ Este archivo `.env` **no se sube a GitHub** por seguridad. Cada usuario debe tener sus propias credenciales.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 Despliegue
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+El proyecto está desplegado en [Vercel](https://vercel.com/).  
+Para desplegarlo manualmente en tu propia cuenta:
 
-### Code Splitting
+1. Crear un proyecto en [Vercel](https://vercel.com/).
+2. Conectar el repositorio de GitHub.
+3. Configurar las variables de entorno en **Settings → Environment Variables**.
+4. Vercel detectará automáticamente que es un proyecto de **React** y hará el build.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📚 Tecnologías usadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Firebase](https://firebase.google.com/)
+- [Vercel](https://vercel.com/)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👤 Autor
+- **Daniel Medina**  
+[GitHub](https://github.com/Daniiel24w)
