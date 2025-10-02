@@ -20,7 +20,7 @@ function Books() {
     },
 
     divisiones: {
-      backgroundColor: "#EAE1DF", //Color platino para que resalte con el fondo 
+      backgroundColor: "#EAE1DF",
       borderRadius: "8px",
       padding: "1rem",
     },

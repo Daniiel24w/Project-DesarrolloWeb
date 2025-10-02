@@ -25,7 +25,7 @@ function Footer() {
             padding: "0px 16px",
         },
         link: {
-            textDecoration: "none", // Elimina el subrayado
+            textDecoration: "none",
             color: "#BEA57D", 
         },
         list: {

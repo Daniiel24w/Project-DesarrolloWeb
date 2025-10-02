@@ -26,7 +26,7 @@ function Navbar() {
       <img src={logo} alt="Logo" width={75} />
     </Link>
     <button
-      className="navbar-toggler"
+      className="navbar-toggler border border-5 border-white"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
